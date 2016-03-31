@@ -14,24 +14,37 @@ class VideoModel: NSObject {
         var videos = [Video]()
         
         let video1 = Video()
-        video1.videoId = "WPvGqX-TXP0"
-        video1.videoTitle = "Java Programming"
-        video1.videoDescription = " specifically cover the following topics: primitive data types, comments, class, import, Scanner, final, Strings, static, private, protected, public, constructors, math, hasNextLine, nextLine, getters, setters, method overloading, Random, casting, toString, conversion from Strings to primitives, converting from primitives to Strings, if, else, else if, print, println, printf, logical operators, comparison operators, ternary operator, switch, for, while, break, continue, do while, polymorphism, arrays, for each, multidimensional arrays and more."
+        video1.videoId = "lJnvq0A_7WQ"
+        video1.videoTitle = "Introduction to Programming"
+        video1.videoDescription = "Uploaded on Feb 24, 2011"
         videos.append(video1)
         
         
         let video2 = Video()
-        video2.videoId = "xHUIbFNO0II"
-        video2.videoTitle = "Fais ft. Afrojack - Hey (Official Video) "
-        video2.videoDescription = "Published on Feb 26 2016"
+        video2.videoId = "jrypN2CpAy8"
+        video2.videoTitle = "Beginner Java Programming - Episode 1: Intro to Game Design "
+        video2.videoDescription = "This is a java programming tutorial made for absolute beginner programmers. In it we cover downloading the programming software, declaring and setting String variables, and printing to the console."
         videos.append(video2)
         
         
         let video3 = Video()
-        video3.videoId = "foE1mO2yM04"
-        video3.videoTitle = "Mike Posner - I Took A Pill In Ibiza (Seeb Remix) (Explicit)"
+        video3.videoId = "Rub-JsjMhWY"
+        video3.videoTitle = "C++ Programming"
         video3.videoDescription = "Published on Feb 26 2016"
         videos.append(video3)
+        
+        let video4 = Video()
+        video4.videoId = "WPvGqX-TXP0"
+        video4.videoTitle = "Java Programming"
+        video4.videoDescription = "Specifically cover the following topics: primitive data types, comments, class, import, Scanner, final, Strings, static, private, protected, public, constructors, math, hasNextLine, nextLine, getters, setters, method overloading, Random, casting, toString"
+        videos.append(video4)
+        
+        
+        let video5 = Video()
+        video5.videoId = "ef-6NZjBtW0"
+        video5.videoTitle = "How to Make Android Apps"
+        video5.videoDescription = "I will show you how to make Android apps. This is the beginning of a large tutorial series. I will do my best improve on the first tutorial by following all of the suggestions I have received."
+        videos.append(video5)
         
         return videos
     }

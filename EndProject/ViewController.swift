@@ -17,25 +17,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet var tableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-      /*
-        let movieUrl : NSURL? = NSURL(string: "https://www.youtube.com/watch?v=foE1mO2yM04")
-        
-        if let url = movieUrl{
-            
-            self.player = AVPlayer(URL: url)
-            self.playerViewController.player = self.player
-            
-        }*/
+    
         let model = VideoModel()
         self.videos = model.getVideos()
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
         
     }
 
@@ -103,17 +92,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         detailViewController.selectedVideo = self.selectedVideo
     }
-    
-   /* @IBAction func playAction(sender: AnyObject) {
-        if player?.rate == 0{
-            player?.play()
-            btnPlay.setImage(UIImage(named: "play.jpg"), forState: UIControlState.Normal)
-        }else{
-            player?.pause()
-            btnPlay.setImage(UIImage(named: "pause.jpg"), forState: UIControlState.Normal)
-        }
-        
-    }*/
+
 
 }
 

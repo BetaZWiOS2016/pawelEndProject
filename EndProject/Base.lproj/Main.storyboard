@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Video DetailV Iew Controller-->
@@ -18,38 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILg-6I-jRy">
-                                <rect key="frame" x="0.0" y="0.0" width="590" height="350"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="vg0-Qi-w9T"/>
-                                </constraints>
-                            </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRp-1r-qcA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRp-1r-qcA">
                                 <rect key="frame" x="20" y="-42" width="560" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="24t-w2-vB2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.99865249489999997" green="1" blue="0.97646244230000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="24t-w2-vB2"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSZ-rA-yza">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSZ-rA-yza">
                                 <rect key="frame" x="20" y="0.0" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.99865249489999997" green="1" blue="0.97646244230000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILg-6I-jRy">
+                                <rect key="frame" x="0.0" y="64" width="600" height="350"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="vg0-Qi-w9T"/>
+                                </constraints>
+                            </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ILg-6I-jRy" firstAttribute="top" secondItem="HA3-XQ-riR" secondAttribute="topMargin" id="8sO-ce-9MG"/>
                             <constraint firstItem="ILg-6I-jRy" firstAttribute="leading" secondItem="HA3-XQ-riR" secondAttribute="leading" id="EF1-8h-JDx"/>
                             <constraint firstAttribute="trailing" secondItem="GRp-1r-qcA" secondAttribute="trailing" constant="20" id="Kah-cz-jsh"/>
+                            <constraint firstItem="ILg-6I-jRy" firstAttribute="top" secondItem="MxL-OE-m3Y" secondAttribute="bottom" id="SRE-tB-IvA"/>
                             <constraint firstAttribute="trailing" secondItem="wSZ-rA-yza" secondAttribute="trailing" constant="20" id="VXw-lp-c15"/>
                             <constraint firstItem="GRp-1r-qcA" firstAttribute="leading" secondItem="HA3-XQ-riR" secondAttribute="leading" constant="20" id="WEL-nX-wkC"/>
                             <constraint firstItem="wSZ-rA-yza" firstAttribute="leading" secondItem="HA3-XQ-riR" secondAttribute="leading" constant="20" id="amo-1n-NNs"/>
-                            <constraint firstAttribute="trailing" secondItem="ILg-6I-jRy" secondAttribute="trailing" constant="10" id="bwL-JG-IVE"/>
+                            <constraint firstAttribute="trailing" secondItem="ILg-6I-jRy" secondAttribute="trailing" id="bwL-JG-IVE"/>
                             <constraint firstItem="GRp-1r-qcA" firstAttribute="top" secondItem="ILg-6I-jRy" secondAttribute="bottom" constant="20" id="goX-w7-0DE"/>
                             <constraint firstItem="wSZ-rA-yza" firstAttribute="top" secondItem="GRp-1r-qcA" secondAttribute="bottom" constant="20" id="xf1-Cz-Nr4"/>
                         </constraints>

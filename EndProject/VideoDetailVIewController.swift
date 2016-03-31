@@ -35,28 +35,18 @@ class VideoDetailVIewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         if let vid = self.selectedVideo{
-            //self.titleLabel.text = vid.videoId
 
             self.titleLabel.text = vid.videoTitle
             self.descriptionLabel.text = vid.videoDescription
             
-            let width = self.view.frame.size.width
-            let height = width/320 * 180
+            let url  : NSURL = NSURL(string: "https://www.youtube.com/embed/" + vid.videoId  + "")!
             
-            let videoEmbedString = "<html><body><iframe width='" + String(width) + "' height='" + String(height) + "' src='https://www.youtube.com/embed/" + vid.videoId + " frameborder='0' allowfullscreen></iframe></html></body>"
-            
-            self.webView.loadHTMLString(videoEmbedString, baseURL: NSBundle.mainBundle().resourceURL)
+            let request : NSURLRequest  = NSURLRequest(URL: url)
+            self.webView.allowsInlineMediaPlayback = true
+            self.webView.loadRequest(request)
+          
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
